@@ -1,5 +1,7 @@
 
 function busca(valor){
+    const procura = document.querySelector('#search')
+    procura.value = ""
     const serviceUrl = `https://imdb-internet-movie-database-unofficial.p.rapidapi.com/search/${valor}`
     axios.defaults.baseURL = 'http://Dominio';
     axios.defaults.headers.post['Content-Type'] ='application/json;charset=utf-8';
@@ -19,8 +21,8 @@ function busca(valor){
 }
 
 function click(){
-    const procura = document.querySelector('#search')
-    busca(procura.value)
+    const procura = document.querySelector('#search')    
+    busca(procura.value)    
 }
 
 function exibe(lista){
@@ -50,3 +52,21 @@ busco.onclick = function(){
     doc.innerHTML = ""
     click()
 }
+
+var data = "summonerId=1&apiKey=RGAPI-f27a43b5-bedb-4522-9136-2ef489916538&region=BR";
+
+var xhr = new XMLHttpRequest();
+xhr.withCredentials = true;
+
+xhr.addEventListener("readystatechange", function () {
+	if (this.readyState === this.DONE) {
+		console.log(this.responseText);
+	}
+});
+
+xhr.open("POST", "https://leagueoflegendsstefan-skliarovv1.p.rapidapi.com/getAllChampionMasteries");
+xhr.setRequestHeader("x-rapidapi-host", "LeagueOfLegendsstefan-skliarovV1.p.rapidapi.com");
+xhr.setRequestHeader("x-rapidapi-key", "f72a6b1673mshb4b0130bc4010c3p1eed21jsn3a5f09b4d080");
+xhr.setRequestHeader("content-type", "application/x-www-form-urlencoded");
+
+xhr.send(data);
