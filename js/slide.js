@@ -1,15 +1,10 @@
 function slide(){
-    let img1 = document.querySelector('.img1')
-    let img2 = document.querySelector('.img2')
-    let img3 = document.querySelector('.img3')
-    let img4 = document.querySelector('.img4')
-
-    const listaMov = [img1,img2,img3,img4]
+    let img1 = document.querySelectorAll('.img')
+    const listaMov = Array.from(img1)
     
     listaMov.map((e , index) => {
         e.style.left = `${450 * index}px`
     })
-
     function mouse(img){
         const elemento = img.querySelector('.exb')  
         img.onmouseover = function(){
@@ -19,7 +14,6 @@ function slide(){
             elemento.style.display = 'none'       
         }
     }
-    
     function mover(){   
         listaMov.map(e => {            
             movendo(e)
