@@ -5,6 +5,7 @@ function slide(){
     listaMov.map((e , index) => {
         e.style.left = `${450 * index}px`
     })
+    
     function mouse(img){
         const elemento = img.querySelector('.exb')  
         img.onmouseover = function(){
@@ -22,12 +23,8 @@ function slide(){
     }
     setInterval(mover,10)
     function movendo(img){
-        let number = parseInt(img.style.left)
-        number = number - 3
-        if(number < -450){
-            return img.style.left = '1350px'
-        }
-        img.style.left = `${number}px`
+        let number = parseInt(img.style.left)       
+        img.style.left = (number < -450)? `${(listaMov.length - 1)*450}px`:`${number-3}px`
     }    
     mover()
 }  
