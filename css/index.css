@@ -193,7 +193,7 @@ body{
 label[for="search"]{
     margin-left: 10px;
     margin-right: 10px;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
 }
 
 #search{
@@ -201,11 +201,13 @@ label[for="search"]{
     padding-left: 20px;
     margin-top: 10px;
     height: 40px;
-    width: 400px;
+    width: 50%;
 }
+
 button{
     color: #28f5be;
-    width: 150px;
+    width: 20%;
+    min-width: 120px;
     height: 40px;
     margin-left: 5px;
     border-radius: 20px;
