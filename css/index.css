@@ -1,123 +1,130 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-body{
+body {
     background-color: #0b0d0e;
     color: #fff;
     overflow-x: hidden;
 }
+
 ::-webkit-scrollbar {
     width: 0px;
     background: #F4F4F4;
 }
+
 /* MENU DO SITE */
 
-#menu li,ol{
+#menu li,
+ol {
     list-style: none;
 }
-#menu a{
+
+#menu a {
     position: relative;
     text-decoration: none;
     color: #28f5be;
 }
-#menu a i{
+
+#menu a i {
     color: #18d8a4;
-    margin-right: 10px;    
+    margin-right: 10px;
 }
 
-#menu{
+#menu {
     width: 100vw;
     text-align: center;
     display: flex;
     justify-content: center;
     padding-top: 5px;
 }
-#menu ul{    
+
+#menu ul {
     float: right;
 }
 
-#menu .logo-naruto{
+#menu .logo-naruto {
     padding-top: 10px;
 }
 
-#menu img{    
+#menu img {
     width: 120px;
     height: 100px;
     border-radius: 100%;
-    border: solid 5px #28f5be ;
+    border: solid 5px #28f5be;
 }
 
-#menu ul li ul{
+#menu ul li ul {
     position: absolute;
     left: -150px;
     top: 46px;
     display: none;
 }
+
 #menu ul li a {
     display: block;
     padding-top: 5px;
 }
 
-#menu ul li{   
+#menu ul li {
     font-size: 2rem;
-    -webkit-box-sizing: initial; 
-    position: relative;  
-    float: left;     
+    -webkit-box-sizing: initial;
+    position: relative;
+    float: left;
     width: 200px;
     height: 40px;
-    border-radius: 140px;   
+    border-radius: 140px;
     border: solid 3px #18d8a4;
-    padding: 2px; 
+    padding: 2px;
     background-color: #0b0d0e;
     margin: 4px;
 }
 
-#menu li:hover ul{
+#menu li:hover ul {
     z-index: 1000;
     display: block;
 }
 
-#menu ul ul li{    
+#menu ul ul li {
     margin-left: 150px;
 }
 
 
 /* SLIDER DE ANIME  */
-#slider-anime{
+#slider-anime {
     display: flex;
     justify-content: center;
 }
 
-#app{
+#app {
     width: 1272px;
     height: 250px;
     overflow: hidden;
     display: flex;
     position: relative;
-    border:ridge 10px #18d8a4;
+    border: ridge 10px #18d8a4;
     border-radius: 20px;
 }
 
-#app div img{
-    border-left:solid 10px #000;
+#app div img {
+    border-left: solid 10px #000;
     width: 100%;
-    height: 100%;      
+    height: 100%;
 }
 
-#app div{
+#app div {
     overflow: hidden;
-    width: 455px;    
+    width: 455px;
     height: 250px;
     position: absolute;
     background-size: 100% 100%;
 }
 
-#app div .exb{
+#app div .exb {
     display: none;
     background-color: #0009;
-    text-align: center;   
+    text-align: center;
     padding-top: 50px;
     color: #f5f5f5;
 }
@@ -125,55 +132,61 @@ body{
 
 /* CORPO DA PAGINA */
 
-#root{
+#root {
     width: 100vw;
     display: flex;
     justify-content: center;
 }
 
-#root input, #inputState, option{
+#root input,
+#inputState,
+option {
     background-color: #0b0d0e;
     color: #28f5be;
     border: solid 3px #28f5be;
     border-radius: 20px;
 }
 
-#root .conjunto{
+#root .conjunto {
     width: 1272px;
     position: relative;
 }
 
 /* OPCAO DE FILMES LATERAL */
 
-#filmes ul,#filmes ol{
+#filmes ul,
+#filmes ol {
     list-style: none;
 }
-#filmes a:hover{
+
+#filmes a:hover {
     text-decoration: none;
     color: #28f5be;
 }
-#filmes a{
+
+#filmes a {
     display: block;
     font-size: 1.7rem;
-    border:solid 2px #0cb9b9;
+    border: solid 2px #0cb9b9;
     border-radius: 30px;
     padding: 2px;
     color: #fff;
     width: 150px;
 }
-#filmes{
+
+#filmes {
     width: 30%;
     text-align: center;
     float: right;
 }
 
-#filmes li{
+#filmes li {
     display: flex;
     justify-content: center;
-    margin: 4px 0px;   
+    margin: 4px 0px;
 }
 
-#filmes ul{
+#filmes ul {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -183,20 +196,20 @@ body{
 
 /* EXIBICAO DOS FILMES */
 
-#pecas{
+#pecas {
     position: relative;
     width: 70%;
     float: left;
     height: auto;
 }
 
-label[for="search"]{
+label[for="search"] {
     margin-left: 10px;
     margin-right: 10px;
     font-size: 1.5rem;
 }
 
-#search{
+#search {
     font-size: 1.5rem;
     padding-left: 20px;
     margin-top: 10px;
@@ -204,7 +217,7 @@ label[for="search"]{
     width: 50%;
 }
 
-button{
+button {
     color: #28f5be;
     width: 20%;
     min-width: 120px;
@@ -215,17 +228,18 @@ button{
     text-transform: uppercase;
 }
 
-#collection{
+#collection {
     width: 100%;
     padding-top: 15px;
     flex-wrap: wrap;
 }
-#collection div{   
+
+#collection div {
     margin: 5px 10px;
     padding: 2px;
 }
 
-#collection h3{
+#collection h3 {
     border: solid 2px #28f5be;
     padding: 5px 0;
     border-radius: 15px;
@@ -233,7 +247,7 @@ button{
     text-align: center;
 }
 
-.container{
+.container {
     display: block;
     width: 45%;
     float: left;
@@ -241,13 +255,14 @@ button{
     flex-direction: column;
 }
 
-.imgCc{
+.imgCc {
     border: solid 2px #28f5be;
     border-radius: 15px;
     height: 500px;
     width: 100%;
 }
-.tituloF{   
+
+.tituloF {
     background-color: #0d0b0e;
     font-size: 1.9rem;
     color: #0cb9b9;
